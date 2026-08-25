@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zack - Personal Blueprint & Future Blueprint</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            space: {
+              black: '#0a0a0c',
+              card: '#13131a',
+              cardBorder: '#262633',
+              orange: '#ff5e1a',
+              orangeHover: '#ff7b42',
+              orangeGlow: 'rgba(255, 94, 26, 0.25)',
+              text: '#e2e8f0',
+              muted: '#8e9bae'
+            }
+          },
+          fontFamily: {
+            sans: ['Space Grotesk', 'Noto Sans TC', 'sans-serif'],
+          },
+          borderRadius: {
+            'space': '2rem',
+            'space-lg': '3rem'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Space Age Aesthetics */
+    body {
+      background-color: #0a0a0c;
+      color: #e2e8f0;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(255, 94, 26, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(255, 94, 26, 0.05) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    /* Retro CRT Line / Scanline Effect overlay */
+    .space-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    }
+
+    .orange-glow-box {
+      box-shadow: 0 0 30px rgba(255, 94, 26, 0.15);
+      border: 1px solid rgba(255, 94, 26, 0.3);
+    }
+
+    .orange-glow-text {
+      text-shadow: 0 0 12px rgba(255, 94, 26, 0.6);
+    }
+
+    .space-card {
+      background: rgba(19, 19, 26, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .space-card:hover {
+      border-color: rgba(255, 94, 26, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0a0c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262633;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff5e1a;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased space-grid min-h-screen selection:bg-space-orange selection:text-white">
+
+  <header class="sticky top-0 z-50 bg-space-black/80 backdrop-blur-md border-b border-space-cardBorder/50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <div class="w-10 h-10 rounded-full bg-space-orange/20 border border-space-orange flex items-center justify-center text-space-orange font-bold text-xl">
+          Z
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-space-muted">Personal DNA System</div>
+          <div class="text-lg font-bold text-white tracking-wide">ZACK ARCHIVE</div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex space-x-1 border border-white/10 p-1.5 rounded-full bg-space-card">
+        <a href="#core" class="px-5 py-2 text-xs font-semibold rounded-full text-space-text hover:text-space-orange transition">天賦核心</a>
+        <a href="#hedgehog" class="px-5 py-2 text-xs font-semibold rounded-full text-space-text hover:text-space-orange transition">刺蝟原則</a>
+        <a href="#chain" class="px-5 py-2 text-xs font-semibold rounded-full text-space-text hover:text-space-orange transition">價值鏈</a>
+        <a href="#roadmap" class="px-5 py-2 text-xs font-semibold rounded-full text-space-text hover:text-space-orange transition">職涯藍圖</a>
+        <a href="#risks" class="px-5 py-2 text-xs font-semibold rounded-full text-space-text hover:text-space-orange transition">警示雷達</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-20">
+
+    <section class="relative text-center py-12">
+      <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-space-orange/40 bg-space-orange/10 text-space-orange text-xs tracking-wider uppercase mb-6">
+        <span class="w-2 h-2 rounded-full bg-space-orange animate-ping"></span>
+        <span>深度天賦分析報告</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+        未來具象化 <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-space-orange to-orange-300 orange-glow-text">
+          Future Concretization
+        </span>
+      </h1>
+      
+      <p class="max-w-2xl mx-auto text-space-muted text-base md:text-lg font-light leading-relaxed mb-10">
+        你不是單純的工業設計師，而是能在複雜現實中看見可能性，定義真正值得被實現的未來，並透過產品與系統將其轉化為現實的創作者。
+      </p>
+
+      <div class="space-card rounded-space p-8 max-w-3xl mx-auto orange-glow-box text-center relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 text-9xl font-bold text-white/5 pointer-events-none">“</div>
+        <p class="text-xl md:text-2xl font-medium text-white italic mb-4">
+          「我不是想預測未來，我想把我相信的未來做出來。」
+        </p>
+        <div class="text-space-orange text-sm font-bold tracking-wider uppercase">
+          設計哲學：比恰到好處，多一點點
+        </div>
+      </div>
+    </section>
+
+    <section id="core" class="space-y-8">
+      <div class="flex items-center space-x-4">
+        <div class="w-3 h-8 bg-space-orange rounded-full"></div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-wide text-white">01 / 天賦核心與判斷標準</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-card rounded-space p-8 space-y-4">
+          <div class="text-xs text-space-orange uppercase tracking-widest font-semibold">Core Competence</div>
+          <h3 class="text-xl font-bold text-white">核心能力：未來具象化</h3>
+          <p class="text-space-muted text-sm leading-relaxed">
+            從現實世界大量分散的資訊、限制與可能性中，理解問題、推演未來，形成一個自己相信值得存在的方向，再透過產品、設計與系統把它具體化。
+          </p>
+          <div class="pt-4 border-t border-white/5 text-xs text-space-muted">
+            <strong class="text-white">獨特護城河：</strong> 既能想像未來，又理解現實的工程、製造、成本與商業限制。
+          </div>
+        </div>
+
+        <div class="space-card rounded-space p-8 space-y-4">
+          <div class="text-xs text-space-orange uppercase tracking-widest font-semibold">Ultimate Question</div>
+          <h3 class="text-xl font-bold text-white">終極衡量標準</h3>
+          <p class="text-space-muted text-sm leading-relaxed italic">
+            「我的產品有沒有為消費者創造出更好且自然而然的生活品質。」
+          </p>
+          <div class="pt-4 border-t border-white/5 text-xs text-space-muted space-y-1">
+            <div><span class="text-space-orange">● 生活導向：</span> 不是問功能多寡或技術新舊，而是生活品質。</div>
+            <div><span class="text-space-orange">● 自然而然：</span> 讓產品融入生活，讓好的結果自然發生。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hedgehog" class="space-y-8">
+      <div class="flex items-center space-x-4">
+        <div class="w-3 h-8 bg-space-orange rounded-full"></div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-wide text-white">02 / 刺蝟原則與 IKIGAI</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-4 gap-6">
+        <div class="space-card rounded-space p-6 flex flex-col justify-between border-t-2 border-t-space-orange">
+          <div>
+            <div class="text-2xl mb-2">❤️</div>
+            <h3 class="text-lg font-bold text-white mb-2">熱情所在</h3>
+            <p class="text-xs text-space-muted leading-relaxed">
+              創造未來的生活想像。不是單純畫產品，而是探索「如果生活可以變成另一種樣子呢？」
+            </p>
+          </div>
+        </div>
+
+        <div class="space-card rounded-space p-6 flex flex-col justify-between border-t-2 border-t-space-orange">
+          <div>
+            <div class="text-2xl mb-2">🧠</div>
+            <h3 class="text-lg font-bold text-white mb-2">天賦能力</h3>
+            <p class="text-xs text-space-muted leading-relaxed">
+              跨維度整合（設計×使用者×技術×成本×製造×商業）。理解現實怎麼把想像做出來。
+            </p>
+          </div>
+        </div>
+
+        <div class="space-card rounded-space p-6 flex flex-col justify-between border-t-2 border-t-space-orange">
+          <div>
+            <div class="text-2xl mb-2">💰</div>
+            <h3 class="text-lg font-bold text-white mb-2">高經濟價值</h3>
+            <p class="text-xs text-space-muted leading-relaxed">
+              產品定義、產品策略、創新產品開發。告訴企業「下一個值得做的產品是什麼」。
+            </p>
+          </div>
+        </div>
+
+        <div class="space-card rounded-space p-6 flex flex-col justify-between border-t-2 border-t-space-orange">
+          <div>
+            <div class="text-2xl mb-2">🌎</div>
+            <h3 class="text-lg font-bold text-white mb-2">世界需要</h3>
+            <p class="text-xs text-space-muted leading-relaxed">
+              讓人重新對生活產生熱情。帶來自然 × 品味 × 驚喜 × 未來感的產品。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-space bg-space-card/40 border border-white/10 text-center text-sm md:text-base text-space-text">
+        <span class="text-space-orange font-bold">核心交集公式：</span> 未來想像 × 設計 × 系統整合 × 生活品質
+        <span class="block md:inline mt-2 md:mt-0 text-space-muted">（把可以想像的未來，轉化成可以碰觸的生活）</span>
+      </div>
+    </section>
+
+    <section id="chain" class="space-y-8">
+      <div class="flex items-center space-x-4">
+        <div class="w-3 h-8 bg-space-orange rounded-full"></div>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-wide text-white">03 / 核心思考與價值鏈</h2>
+      </div>
+
+      <div class="space-card rounded-space p-8">
+        <div class="text-xs text-space-orange uppercase tracking-widest font-semibold mb-6">Cognitive Chain</div>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-space-orange text-xs font-bold mb-1">STEP 01</div>
+            <div class="text-sm font-semibold text-white">未來想像</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-space-orange text-xs font-bold mb-1">STEP 02</div>
+            <div class="text-sm font-semibold text-white">理解複雜現實</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-space-orange text-xs font-bold mb-1">STEP 03</div>
+            <div class="text-sm font-semibold text-white">定義產品價值</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-space-orange text-xs font-bold mb-1">STEP 04</div>
+            <div class="text-sm font-semibold text-white">設計與具象化</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-space-orange text-xs font-bold mb-1">STEP 05</div>
+            <div class="text-sm font-semibold text-white">驗證與迭代</div>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-space-orange text-xs font-bold mb-1">STEP 06</div>
+            <div class="text-sm font-semibold text-white">創造更好生活</div>
+          </div>
+        </div>
+
+        <div class="mt-8 p-4 rounded-xl bg-space-orange/10 border border-space-orange/20 text-xs text-space-muted text-center">
+          思考順序：為什麼存在？ (Why) → 為誰存在？ → 要帶來什麼改變？ → 應該形成什麼產品？ (What) → 怎麼做出來 (How)
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap"
